@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.contentWrapper {
+    width: 80vw;
+    margin: 4rem auto;
+}
+
+header h1 {
+    text-align: center;
+    width: 16rem;
+    margin: 0 auto;
+    line-height: 1.7rem;
+    color: hsl(300, 43%, 22%);
+}
+
+header p {
+    text-align: center;
+    color: hsl(303, 10%, 53%);
+}
+
+.starRatingBox {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.starRatingBox div {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.starRatingBox h2 {
+    margin: 0.4rem 0 0 0;
+    font-size: 1rem;
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+
+.cutomerTestimonialBox {
+    background-color: hsl(300, 43%, 22%);
+}
