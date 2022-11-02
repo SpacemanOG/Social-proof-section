@@ -9,13 +9,13 @@ body {
     font-family: 'League Spartan', sans-serif;
     background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     background-position: top, bottom;
-    background-size: contain;
+    background-size: 374px 232px, 375px 503px;
     background-repeat: no-repeat, no-repeat;
 }
 
 .contentWrapper {
     width: 80vw;
-    margin: 4rem auto;
+    margin: 5.5rem auto;
 }
 
 header h1 {
@@ -96,9 +96,20 @@ blockquote:after {
 /* DESKTOP VERSION */
 
 @media (min-width: 1440px) {
+    body {
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-size: 42%, 78%;
+        background-repeat: no-repeat, no-repeat;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
 
     .contentWrapper {
-        width: 72vw;
+        width: 1110px;
+        height: 580px;
+        margin: 132px 165px 110px;
     }
 
     /* STARTING FROM THE BOTTOM 3 CARDS */
@@ -110,7 +121,7 @@ blockquote:after {
     .cutomerTestimonialBox {
         width: 350px;
         height: 234px;
-        line-height: 1.5rem;
+        line-height: 1.4rem;
         padding: 2.4rem;
         margin: 0;
     }
@@ -123,12 +134,21 @@ blockquote:after {
         margin-top: 2rem;
     }
 
+    .customerInfo p {
+        font-weight: bold;
+    }
+
+    .verificationBadge {
+        font-weight: normal;
+    }
+
 
     /* NOW THE DESKTOP TOP SECTION SETTINGS */
 
     /* FIRST, TOP LEFT SECTION */
     .desktopTopSection {
         display: flex;
+        align-items: center;
         margin-bottom: 3rem;
     }
 
@@ -142,16 +162,17 @@ blockquote:after {
     }
 
     .headline h1 {
-        font-size: 3rem;
+        font-size: 3.4rem;
         margin: 0 0 1.5rem 0;
         width: 24rem;
-        line-height: 2.6rem;
+        line-height: 3rem;
         letter-spacing: -1.5px;
     }
 
     .headline p {
         width: 26rem;
         font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 
     /* SECONDLY, THE TOP RIGHT SECTION */
@@ -159,13 +180,29 @@ blockquote:after {
         width: 444px;
         height: 56px;
         display: flex;
+        justify-content: baseline;
+    }
+
+    .starRatingBox div {
+        padding-left: 24px;
     }
 
     .starRatingBox img {
         width: 17px;
         height: 16px;
+        align-self: center;
     }
 
+    .starRatingBox h2 {
+        margin: 0 0 0 40px;
+        align-self: center;
+    }
 
+    .starRatingBox:nth-child(2) {
+        margin-left: 3rem;
+    }
 
+    .starRatingBox:nth-child(3) {
+        margin-left: 6rem;
+    }
 }
