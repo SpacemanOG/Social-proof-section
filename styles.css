@@ -123,14 +123,49 @@ blockquote:after {
         margin-top: 2rem;
     }
 
-    /* NOW THE STAR RATING SECTION SETTINGS */
+
+    /* NOW THE DESKTOP TOP SECTION SETTINGS */
+
+    /* FIRST, TOP LEFT SECTION */
+    .desktopTopSection {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    .headline,
+    .starRatingSection {
+        width: 50%;
+    }
+
+    .headline>* {
+        text-align: left;
+    }
+
+    .headline h1 {
+        font-size: 3rem;
+        margin: 0 0 1.5rem 0;
+        width: 24rem;
+        line-height: 2.6rem;
+        letter-spacing: -1.5px;
+    }
+
+    .headline p {
+        width: 26rem;
+        font-size: 1.1rem;
+    }
+
+    /* SECONDLY, THE TOP RIGHT SECTION */
     .starRatingBox {
         width: 444px;
         height: 56px;
+        display: flex;
     }
 
-    /* NOW THE HEADLINE SECTION */
-    .headline h1 {
-        font-size: 3rem;
+    .starRatingBox img {
+        width: 17px;
+        height: 16px;
     }
+
+
+
 }
